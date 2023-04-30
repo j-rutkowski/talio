@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@/client/styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.MultiBoardCtrl">
+   <children>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="130.0" layoutY="52.0" prefHeight="277.0" prefWidth="339.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="50.0">
+         <content>
+            <VBox fx:id="boardList" prefWidth="336.0" spacing="15.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="serverLabel" layoutX="328.0" layoutY="22.0" text="Currently connected to: localhost:8080" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+      <HBox alignment="CENTER" layoutX="140.0" layoutY="348.0" spacing="40.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#add" prefWidth="120.0" styleClass="action-button" text="Add board" />
+            <Button mnemonicParsing="false" onAction="#joinBoard" prefWidth="120.0" styleClass="action-button" text="Join board" />
+            <Button mnemonicParsing="false" onAction="#disconnect" prefWidth="120.0" text="Disconnect">
+               <styleClass>
+                  <String fx:value="action-button" />
+                  <String fx:value="danger-button" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="-20.0" layoutY="41.0" spacing="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#verifyPassword" styleClass="icon-button" text="Button">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/client/icons/lock-solid.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Admin rights" />
+               </tooltip>
+            </Button>
+            <Label fx:id="adminLabel" textFill="LIME" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

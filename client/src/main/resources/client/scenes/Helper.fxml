@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.HelperCtrl">
+   <children>
+      <Label layoutX="123.0" layoutY="58.0" prefHeight="41.0" prefWidth="193.0" text="Helper" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="105.0" text="Server Board&#13;    -Press A to add a Board&#13;    -Press ESC to cancel&#13;&#13;Home Board&#13;    -Press A to add a list&#13;    -Press T to add a tag&#13;    -Press ESC to exit&#13;&#13;Add Card&#13;    -Press F5 to add a task&#13;    -Press F6 to add a tag&#13;    -Press A to create this Card&#13;    -Press ESC to Cancel   &#13;&#13;Press ESC to quit Helper" />
+   </children>
+</AnchorPane>

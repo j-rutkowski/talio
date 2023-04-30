@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.AddTagCtrl">
+   <children>
+      <Button layoutX="310.0" layoutY="312.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <TextField fx:id="titleTextField" layoutX="111.0" layoutY="31.0" prefHeight="25.0" prefWidth="231.0" />
+      <Text layoutX="24.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:" />
+      <Button fx:id="addButton" layoutX="111.0" layoutY="312.0" mnemonicParsing="false" onAction="#addTag" text="Add" />
+      <Text fx:id="emptyTitle" fill="RED" layoutX="111.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.6666564941406" />
+      <Text layoutX="25.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color" />
+      <HBox fx:id="tasks" fillHeight="false" layoutX="111.0" layoutY="213.0" prefHeight="100.0" prefWidth="489.0" spacing="10.0" />
+      <ColorPicker fx:id="colorPicker" layoutX="111.0" layoutY="98.0" />
+   </children>
+</AnchorPane>

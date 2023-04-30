@@ -1,0 +1,23 @@
+1.Everybody did well
+Deadline report
+1.Product pitch
+2. HCI
+Will be Next Tuesday!! Not Friday !!!
+
+We do want to keep the same structure of the product pictch and we want to add some features pitch
+Things we hvae missing are one brightspace Assignment (Product)
+
+For the HCI report, we do want to keep the same structure.
+Focus on the code until Friday.
+Dont have to test javafx
+
+The TA will look at the Dev branch
+For the admin, the rule is not clearly defined but a admin should be able to do what a user can do with a special password.
+
+We have the question on the multi board functionality and it will be asked on the TownSquare
+
+We show the app to the TA.
+Dont spend extra time on the UI , spend more time finishing missing points in epics. Test more and split them evenly between server and client side.
+
+
+Admin should be asked on the Mattermost

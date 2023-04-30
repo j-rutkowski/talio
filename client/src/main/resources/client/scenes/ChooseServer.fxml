@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="600.0" stylesheets="@/client/styles/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.ChooseServerCtrl">
+   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <Label alignment="CENTER" text="Server address (e.g. localhost:8080):" textAlignment="CENTER" />
+         <TextField fx:id="input" maxWidth="200.0" promptText="Server address" style="-fx-background-radius: 10; -fx-background-color: white;" text="localhost:8080">
+            <padding>
+               <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+            </padding></TextField>
+         <Button mnemonicParsing="false" onAction="#connectToServer" styleClass="action-button" text="Connect" />
+      </children>
+   </VBox>
+</AnchorPane>
